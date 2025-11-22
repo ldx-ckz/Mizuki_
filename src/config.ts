@@ -36,14 +36,14 @@ export const siteConfig: SiteConfig = {
 
 	// 特色页面开关配置(关闭不在使用的页面有助于提升SEO,关闭后直接在顶部导航删除对应的页面就行)
 	featurePages: {
-		anime:false, // 番剧页面开关
-		diary: false, // 日记页面开关
-		friends: false, // 友链页面开关
+		anime: true, // 番剧页面开关
+		notes: true, // 日记页面开关
+		friends: true, // 友链页面开关
 		projects: true, // 项目页面开关
 		skills: true, // 技能页面开关
 		timeline: true, // 时间线页面开关
-		albums: false, // 相册页面开关
-		devices: true, // 设备页面开关
+		albums: true, // 相册页面开关
+		devices: false, // 设备页面开关
 	},
 
 	// 顶栏标题配置
@@ -93,20 +93,20 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
-				"/assets/desktop-banner/5.webp",
-				"/assets/desktop-banner/6.webp",
+				"/assets/desktop-banner/1.jpg",
+				"/assets/desktop-banner/2.jpg",
+				"/assets/desktop-banner/3.jpg",
+				"/assets/desktop-banner/4.jpg",
+				"/assets/desktop-banner/5.jpg",
+				"/assets/desktop-banner/6.jpg",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/1.webp",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
-				"/assets/mobile-banner/5.webp",
-				"/assets/mobile-banner/6.webp",
+				"/assets/mobile-banner/1.jpg",
+				"/assets/mobile-banner/2.jpg",
+				"/assets/mobile-banner/3.jpg",
+				"/assets/mobile-banner/4.jpg",
+				"/assets/mobile-banner/5.jpg",
+				"/assets/mobile-banner/6.jpg",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -135,14 +135,27 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "美しいミズキ", // 主页横幅主标题
+			title: "The fallen leaves tell a story", // 主页横幅主标题
 
 			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
+				"The great Elden Ring was shattered. In our home, across the fog, the Lands Between",
+				"Now, Queen Marika the Eternal is nowhere to be found, and in the Night of the Black Knives, Godwyn the Golden was first to perish",
+				"Soon, Marika’s offspring, demigods all, claimed the shards of the Elden Ring",
+				"The mad taint of their newfound strength triggered the Shattering",
+				"A war from which no lord arose. A war leading to abandonment by the Greater Will",
+				"Arise now, ye Tarnished",
+				"Ye dead, who yet live",
+				"The call of long-lost grace speaks to us all",
+				"Hoarah Loux, chieftain of the badlands",
+				"The ever-brilliant Goldmask",
+				"Fia, the Deathbed Companion",
+				"The loathsome Dung Eater",
+				"And Sir Gideon Ofnir, the All-knowing",
+				"And one other",
+				"Whom grace would again bless",
+				"A Tarnished of no renown",
+				"Cross the fog, to the Lands Between, to stand before the Elden Ring",
+				"And become the Elden Lord"
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -204,20 +217,20 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
-			"/assets/desktop-banner/4.webp",
-			"/assets/desktop-banner/5.webp",
-			"/assets/desktop-banner/6.webp",
+			"/assets/desktop-banner/1.jpg",
+			"/assets/desktop-banner/2.jpg",
+			"/assets/desktop-banner/3.jpg",
+			"/assets/desktop-banner/4.jpg",
+			"/assets/desktop-banner/5.jpg",
+			"/assets/desktop-banner/6.jpg",
 		], // 桌面横幅图片
 		mobile: [
-			"/assets/mobile-banner/1.webp",
-			"/assets/mobile-banner/2.webp",
-			"/assets/mobile-banner/3.webp",
-			"/assets/mobile-banner/4.webp",
-			"/assets/mobile-banner/5.webp",
-			"/assets/mobile-banner/6.webp",
+			"/assets/mobile-banner/1.jpg",
+			"/assets/mobile-banner/2.jpg",
+			"/assets/mobile-banner/3.jpg",
+			"/assets/mobile-banner/4.jpg",
+			"/assets/mobile-banner/5.jpg",
+			"/assets/mobile-banner/6.jpg",
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
@@ -236,31 +249,6 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
 		{
-			name: "Links",
-			url: "/links/",
-			icon: "material-symbols:link",
-			children: [
-				{
-					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
-					external: true,
-					icon: "fa6-brands:github",
-				},
-				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
-					external: true,
-					icon: "fa6-brands:bilibili",
-				},
-				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
-					external: true,
-					icon: "mdi:git",
-				},
-			],
-		},
-		{
 			name: "My",
 			url: "/content/",
 			icon: "material-symbols:person",
@@ -271,20 +259,14 @@ export const navBarConfig: NavBarConfig = {
 					icon: "material-symbols:movie",
 				},
 				{
-					name: "Diary",
-					url: "/diary/",
+					name: "Notes",
+					url: "/notes/",
 					icon: "material-symbols:book",
 				},
 				{
 					name: "Gallery",
 					url: "/albums/",
 					icon: "material-symbols:photo-library",
-				},
-				{
-					name: "Devices",
-					url: "devices/",
-					icon: "material-symbols:devices",
-					external: false,
 				},
 			],
 		},
@@ -333,36 +315,16 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "Matsuzaka Yuki",
-	bio: "The world is big, you have to go and see",
+	bio: "Greetings.Travellers from bryond the fog.",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
 	},
 	links: [
 		{
-			name: "Bilibli",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
-		},
-		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
-		},
-		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/matsuzaka-yuki",
-		},
-		{
-			name: "Codeberg",
-			icon: "simple-icons:codeberg",
-			url: "https://codeberg.org",
-		},
-		{
-			name: "Discord",
-			icon: "fa6-brands:discord",
-			url: "https://discord.gg/MqW6TcQtVM",
 		},
 	],
 };
