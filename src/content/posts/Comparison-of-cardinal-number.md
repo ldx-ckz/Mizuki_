@@ -49,11 +49,13 @@ $$A_0 = \left( \bigcup_{n=0}^{\infty} (A_{2n} \setminus A_{2n+1}) \right) \cup \
 $$B_0 = \left( \bigcup_{n=0}^{\infty} (B_{2n} \setminus B_{2n+1}) \right) \cup \left( \bigcup_{n=0}^{\infty} (B_{2n+1} \setminus B_{2n+2}) \right) \cup \left( \bigcap_{n=0}^{\infty} B_n \right)$$
 
 构造双射 $\vartheta : A_0 \rightarrow B_0$：
-$$\vartheta(x) = 
+$$
+\vartheta(x) = 
 \begin{cases}
 \varphi(x), & x \in \left( \bigcup_{n=0}^{\infty} (A_{2n} \setminus A_{2n+1}) \right) \cup \left( \bigcap_{n=0}^{\infty} A_n \right) \\
 \psi^{-1}(x), & x \in \bigcup_{n=0}^{\infty} (A_{2n+1} \setminus A_{2n+2})
-\end{cases}$$
+\end{cases}
+$$
 
 $\vartheta$ 是 $A_0$ 到 $B_0$ 的双射。
 
@@ -114,5 +116,6 @@ $$T = \{ n \in \mathbb{N} : \forall m \in S (n < m) \}$$
 4. **自然数良序性**：自然数集的任何非空子集都有最小元
 
 ---
+
 
 
