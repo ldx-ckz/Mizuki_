@@ -1,8 +1,14 @@
 ---
-title: "1.7 向量"
-date: 2025-11-24
-categories: ["analysis"]
-tags: ["math", "analysis", "notes"]
+title: 1.7 向量
+pubDate: 2025-11-24
+pinned: false
+description: Analysis note
+published: 2025-11-24  
+tags: [math,analysis,notes]
+category: Analysis
+licenseName: "Unlicensed"
+author: nikonikoni
+draft: false
 ---
 # 1.7 向量
 
@@ -290,5 +296,6 @@ $$
 $$
 |x + y|_p \leq |x|_p + |y|_p
 $$
+
 
 证毕。
