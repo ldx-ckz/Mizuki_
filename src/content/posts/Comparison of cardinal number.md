@@ -1,8 +1,14 @@
 ---
-title: "§1.6 基数的比较"
-date: 2025-11-24
-categories: ["analysis"]
-tags: ["math", "analysis", "notes"]
+title: 1.6 基数的比较
+pubDate: 2025-11-24
+pinned: false
+description: Analysis note
+published: 2025-11-24  
+tags: [math,analysis,notes]
+category: Analysis
+licenseName: "Unlicensed"
+author: nikonikoni
+draft: false
 ---
 # §1.6 基数的比较
 
@@ -108,4 +114,5 @@ $$T = \{ n \in \mathbb{N} : \forall m \in S (n < m) \}$$
 4. **自然数良序性**：自然数集的任何非空子集都有最小元
 
 ---
+
 
