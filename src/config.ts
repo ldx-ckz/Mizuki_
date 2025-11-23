@@ -359,7 +359,7 @@ export const commentConfig: CommentConfig = {
 export const announcementConfig: AnnouncementConfig = {
 	title: "Announcement", // 公告标题
 	content: "Welcome to my blog! I will share my study notes and technical articles here.", // 公告内容
-	closable: true, // 允许用户关闭公告
+	closable: false, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
 		text: "", // 链接文本
@@ -568,6 +568,7 @@ export const sakuraConfig: SakuraConfig = {
 
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
+	closable: false,
 	enable: true, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
 	position: "left", // 默认位置在右侧
