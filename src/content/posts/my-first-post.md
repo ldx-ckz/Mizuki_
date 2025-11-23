@@ -1,9 +1,9 @@
 ---
-title: "§1.1 集合"
+title: "1.1 集合"
 date: 2025-11-24
 categories: "analysis"
 tags: [math, analysis, notes]
-description: Analysis note
+description: 数学分析1.1笔记
 ---
 # §1.1 集合
 
