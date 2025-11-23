@@ -1,8 +1,14 @@
 ---
-title: "§1.2 集合运算及几个逻辑符号"
-date: 2025-11-24
-categories: ["analysis"]
-tags: ["math", "analysis", "notes"]
+title: 1.2 集合运算及几个逻辑符号
+pubDate: 2025-11-24
+pinned: false
+description: Analysis note
+published: 2025-11-24  
+tags: [math,analysis,notes]
+category: Analysis
+licenseName: "Unlicensed"
+author: nikonikoni
+draft: false
 ---
 # §1.2 集合运算及几个逻辑符号
 
@@ -169,3 +175,4 @@ $$
 6. **空间概念**：相对性在集合运算中的重要性
 
 ---
+
