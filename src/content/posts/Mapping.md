@@ -1,8 +1,14 @@
 ---
-title: "§1.3 映射"
-date: 2025-11-24
-categories: ["analysis"]
-tags: ["math", "analysis", "notes"]
+title: 1.3 映射
+pubDate: 2025-11-24
+pinned: false
+description: Analysis note
+published: 2025-11-24  
+tags: [math,analysis,notes]
+category: Analysis
+licenseName: "Unlicensed"
+author: nikonikoni
+draft: false
 ---
 # §1.3 映射
 
@@ -127,4 +133,5 @@ $$
 5. **映射复合**：结合律成立，交换律一般不成立
 
 ---
+
 
