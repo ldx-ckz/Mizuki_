@@ -1,8 +1,14 @@
 ---
-title: "§1.5 可数集"
-date: 2025-11-24
-categories: ["analysis"]
-tags: ["math", "analysis", "notes"]
+title: 1.5 可数集
+pubDate: 2025-11-24
+pinned: false
+description: Analysis note
+published: 2025-11-24  
+tags: [math,analysis,notes]
+category: Analysis
+licenseName: "Unlicensed"
+author: nikonikoni
+draft: false
 ---
 # §1.5 可数集
 
@@ -167,4 +173,5 @@ $\bigcup_{n=1}^{\infty} B_n$ 可数，且与 $\bigcup_{n=1}^{\infty} A_n$ 的某
 6. **实数不可数**：Cantor对角线法证明 $(0,1)$ 不可数
 
 ---
+
 
