@@ -10,18 +10,18 @@ licenseName: "Unlicensed"
 author: nikonikoni
 draft: false
 ---
-# §1.3 映射
+# 1.3 映射
 
-## 📌 映射的基本概念
+## 1.映射的基本概念
 
-### 定义
+### 1.1定义
 从集合 $A$ 到集合 $B$ 的映射 $\varphi$ 是指一个规则，使得每个 $x \in A$ 都有唯一的 $y \in B$ 与之对应。
 
-### 表示方法
+### 1.2表示方法
 - $y = \varphi(x)$
 - $\varphi : A \rightarrow B, \quad \varphi : x \mapsto y$
 
-### 术语
+### 1.3术语
 - **定义域**：$A$
 - **目标域**：$B$  
 - **自变量**：$x \in A$
@@ -31,7 +31,7 @@ draft: false
 
 ---
 
-## 📌 映射的相等
+## 2.映射的相等
 
 两个映射 $\varphi$ 和 $\psi$ 相等（$\varphi = \psi$），当且仅当：
 - 定义域相同（记作 $A$）
@@ -41,9 +41,9 @@ draft: false
 
 ---
 
-## 📌 像与原像
+## 3.像与原像
 
-### 像 (Image)
+### 3.1像 (Image)
 设 $C \subset A$，则 $C$ 在映射 $\varphi$ 下的像定义为：
 $$
 \varphi(C) = \{ y \in B : \exists x \in C (y = \varphi(x)) \}
@@ -51,7 +51,7 @@ $$
 
 - $\varphi(A)$ 称为映射 $\varphi$ 的**值域**
 
-### 原像 (Inverse Image)
+### 3.2原像 (Inverse Image)
 设 $D \subset B$，则 $D$ 关于映射 $\varphi$ 的原像定义为：
 $$
 \varphi^{-1}(D) = \{ x \in A : \varphi(x) \in D \}
@@ -61,9 +61,9 @@ $$
 
 ---
 
-## 📌 基本性质
+## 4.基本性质
 
-### 单调性
+### 4.1单调性
 $$
 C \subset D \subset A \Longrightarrow \varphi(C) \subset \varphi(D)
 $$
@@ -74,9 +74,9 @@ $$
 
 ---
 
-## 📌 映射与集合运算的关系
+## 5.映射与集合运算的关系
 
-### 命题 1.3.1
+### 5.1命题 1.3.1
 
 1. **并的像**：
    $$
@@ -107,31 +107,21 @@ $$
 
 ---
 
-## 📌 特殊映射
+## 6.特殊映射
 
-### 限制映射
+### 6.1限制映射
 
 设 $\varphi : A \rightarrow B$，$C \subset A$，则 $\varphi$ 在 $C$ 上的限制定义为：
 $$
 \varphi|_C : C \rightarrow B; \quad \forall x \in C (\varphi|_C (x) = \varphi(x))
 $$
 
-### 恒等映射
+### 6.2恒等映射
 设 $E$ 是非空集合，$E$ 上的恒等映射定义为：
 $$
 id_E : E \rightarrow E, \quad \forall x \in E (id_E(x) = x)
 $$
 
----
 
-## 📌 核心要点总结
-
-1. **映射概念**：定义域、目标域、值域的区别
-2. **像与原像**：不同的概念，原像不一定对应映射
-3. **集合运算**：像对并运算保持等式，对交运算只保持包含关系；原像对并、交运算都保持等式
-4. **特殊映射**：限制映射、恒等映射的定义
-5. **映射复合**：结合律成立，交换律一般不成立
-
----
 
 
