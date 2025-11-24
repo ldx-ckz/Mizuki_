@@ -1,9 +1,9 @@
 ---
 title: 2.5 聚点
-pubDate: 2025-11-24
+pubDate: 2025-11-25
 pinned: false
 description: Analysis note
-published: 2025-11-24  
+published: 2025-11-25 
 tags: [math,analysis,notes]
 category: Analysis
 licenseName: "Unlicensed"
@@ -178,5 +178,6 @@ draft: false
 - 各点在圆内部：保证 $F_n$ 能完全落入圆内
 
 ---
+
 
 
