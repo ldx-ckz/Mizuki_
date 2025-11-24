@@ -10,9 +10,9 @@ licenseName: "Unlicensed"
 author: nikonikoni
 draft: false
 ---
-# §1.2 集合运算及几个逻辑符号
+# 1.2 集合运算及几个逻辑符号
 
-## 📌 逻辑符号补充
+## 1.逻辑符号补充
 
 | 符号 | 含义 | 说明 |
 |------|------|------|
@@ -23,9 +23,9 @@ draft: false
 
 ---
 
-## 📌 集合的基本运算
+## 2.集合的基本运算
 
-### 并集 (Union)
+### 2.1并集 (Union)
 **定义 1.2.1**：设 $A, B$ 是两个集合，$A, B$ 之并定义为：
 $$
 A \cup B = \{x : (x \in A) \lor (x \in B)\}
@@ -36,19 +36,19 @@ $$
 \bigcup_{\alpha \in I} E_\alpha = \{x : \exists \alpha \in I(x \in E_\alpha)\}
 $$
 
-### 交集 (Intersection)
+### 2.2交集 (Intersection)
 **定义 1.2.3**：设 $\{E_\alpha : \alpha \in I\}$ 是集合族，则：
 $$
 \bigcap_{\alpha \in I} E_\alpha = \{x : \forall \alpha \in I(x \in E_\alpha)\}
 $$
 
-### 差集 (Difference)
+### 2.3差集 (Difference)
 **定义 1.2.4**：两个集合之差定义为：
 $$
 A \backslash B = \{x \in A : x \notin B\}
 $$
 
-### 余集 (Complement)
+### 2.4余集 (Complement)
 **定义 1.2.5**：设 $X$ 为空间，$A \subset X$，则 $A$ 的余集定义为：
 $$
 A^C = X \backslash A
@@ -61,7 +61,7 @@ $$
 
 ---
 
-## 📌 常用数集记号
+## 3.常用数集记号
 
 | 记号 | 涵义 | 记号 | 涵义 |
 |------|------|------|------|
@@ -72,19 +72,19 @@ $$
 
 ---
 
-## 📌 集合运算律
+## 4.集合运算律
 
-### 结合律
+### 4.1结合律
 $$
 (A \cup B) \cup C = A \cup (B \cup C), \quad (A \cap B) \cap C = A \cap (B \cap C)
 $$
 
-### 交换律
+### 4.2交换律
 $$
 A \cup B = B \cup A, \quad A \cap B = B \cap A
 $$
 
-### 分配律
+### 4.3分配律
 $$
 A \cap \left( \bigcup_{\alpha \in I} B_\alpha \right) = \bigcup_{\alpha \in I} (A \cap B_\alpha)
 $$
@@ -116,9 +116,9 @@ $$
 
 ---
 
-## 📌 重要定理
+## 5.重要定理
 
-### 定理 1.2.1 (de Morgan对偶原理)
+### 5.1定理 1.2.1 (de Morgan对偶原理)
 
 设 $\{E_\alpha : \alpha \in I\}$ 是一族集合，则：
 
@@ -158,21 +158,11 @@ $$
 
 ---
 
-## 📌 空间概念
+## 6.空间概念
 
 - **空间**：在一个数学问题中，使得问题中出现的所有集合都是其子集的集合 $X$
 - **余集**总是相对于某个特定的空间而言的
 
----
 
-## 📌 核心要点总结
 
-1. **逻辑符号**：$\lor$, $\land$, $\exists$, $\forall$ 的含义与用法
-2. **集合运算**：并、交、差、余集的定义与性质
-3. **数集记号**：$\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ 等标准记号
-4. **运算律**：结合律、交换律、分配律（教材给出了第二分配律的完整证明）
-5. **de Morgan原理**：教材给出了完整证明
-6. **空间概念**：相对性在集合运算中的重要性
-
----
 
