@@ -1,6 +1,7 @@
 ---
 title: 1.1 集合
 pubDate: 2025-11-24
+pubTime: "08:00:00"
 pinned: false
 description: Analysis note
 published: 2025-11-24
