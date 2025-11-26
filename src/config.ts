@@ -281,8 +281,8 @@ export const navBarConfig: NavBarConfig = {
 			icon: "material-symbols:info",
 			children: [
 				{
-					name: "About",
-					url: "/about me/",
+					name: "About Me",
+					url: "/about/",
 					icon: "material-symbols:person",
 				},
 				{
