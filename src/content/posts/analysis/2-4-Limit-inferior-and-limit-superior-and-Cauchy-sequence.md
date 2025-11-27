@@ -1,5 +1,5 @@
 ---
-title: 2.4 柯西收敛准则
+title: 2.4 上下极限与柯西收敛准则
 pubDate: 2025-11-25
 pinned: false
 description: Analysis note
@@ -10,7 +10,7 @@ licenseName: "Unlicensed"
 author: nikonikoni
 draft: false
 ---
-# 2.4 柯西收敛准则
+# 2.4 上下极限与柯西收敛准则
 
 ## 上下极限
 
@@ -382,3 +382,4 @@ $$
 
 
 该子列收敛于有限实数 $L$，故 $\{a_n\}$ 存在收敛子列。
+
