@@ -36,10 +36,35 @@ $$
 
 ###  基本性质
 
-**命题 2** 对任意序列 $\{a_n\}$：
+**命题 1** 对任意序列 $\{a_n\}$：
 $$
 \limsup_{n \to \infty} a_n \geq \liminf_{n \to \infty} a_n
 $$
+
+**证明**
+
+对于每个固定的 $n$，由确界的性质：
+$$
+\sup_{k \geq n} a_k \geq \inf_{k \geq n} a_k
+$$
+
+考虑序列 $\{b_n\}$ 和 $\{c_n\}$，其中：
+- $b_n = \sup\limits_{k \geq n} a_k$（单调递减）
+- $c_n = \inf\limits_{k \geq n} a_k$（单调递增）
+
+由于单调有界序列必收敛（可能趋于无穷大），这两个极限存在。
+
+对每个 $n$，有 $b_n \geq c_n$，取极限 $n \to \infty$ 得：
+$$
+\lim_{n \to \infty} b_n \geq \lim_{n \to \infty} c_n
+$$
+
+即：
+$$
+\limsup_{n \to \infty} a_n \geq \liminf_{n \ to \infty} a_n
+$$
+
+证毕。
 
 **定理 1** 序列 $\{a_n\}$ 收敛的充分必要条件是：
 $$
@@ -50,14 +75,66 @@ $$
 \lim_{n \to \infty} a_n = \limsup_{n \to \infty} a_n = \liminf_{n \to \infty} a_n
 $$
 
+**证明**
+
+(i)必要性（收敛 ⇒ 上下极限相等）
+
+设 $\lim\limits_{n \to \infty} a_n = L$。
+
+对任意 $\epsilon > 0$，存在 $N$，当 $n \geq N$ 时：
+$$
+|a_n - L| < \epsilon \Rightarrow L - \epsilon < a_n < L + \epsilon
+$$
+
+因此：
+- $\inf\limits_{k \geq n} a_k \geq L - \epsilon$
+- $\sup\limits_{k \geq n} a_k \leq L + \epsilon$
+
+取极限 $n \to \infty$ 得：
+$$
+\liminf_{n \to \infty} a_n \geq L - \epsilon,\quad \limsup_{n \to \infty} a_n \leq L + \epsilon
+$$
+
+由 $\epsilon$ 的任意性，令 $\epsilon \to 0$ 得：
+$$
+\liminf_{n \to \infty} a_n \geq L,\quad \limsup_{n \to \infty} a_n \leq L
+$$
+
+结合命题1得：
+$$
+\limsup_{n \to \infty} a_n = \liminf_{n \to \infty} a_n = L
+$$
+
+(ii)充分性（上下极限相等 ⇒ 收敛）
+
+设 $\limsup\limits_{n \to \infty} a_n = \liminf\limits_{n \to \infty} a_n = L$。
+
+对任意 $\epsilon > 0$，存在 $N$，当 $n \geq N$ 时：
+- $\left|\sup\limits_{k \geq n} a_k - L\right| < \epsilon$
+- $\left|\inf\limits_{k \geq n} a_k - L\right| < \epsilon$
+
+即：
+$$
+L - \epsilon < \inf_{k \geq n} a_k \leq \sup_{k \geq n} a_k < L + \epsilon
+$$
+
+因此对所有 $k \geq n$：
+$$
+L - \epsilon < a_k < L + \epsilon \Rightarrow |a_k - L| < \epsilon
+$$
+
+故 $\{a_n\}$ 收敛于 $L$。
+
+证毕。
+
 **命题 2** 设 $ a_n \in \mathbb{R} $, $ n = 1, 2, \cdots $, $ a \in [-\infty, +\infty] $。则 $\limsup_{n \to \infty} a_n = a$ 当且仅当
 
 - (C1) 如果 $\{a_{n_k}\}$ 是 $\{a_n\}$ 的子列，且 $\lim_{k \to \infty} a_{n_k} = s \in [-\infty, +\infty]$，则 $s \leq a$；
 - (C2) 存在 $\{a_n\}$ 的子列 $\{a_{n_k}\}$，使得 $\lim_{k \to \infty} a_{n_k} = a$。
 
-**证明：**
+**证明**
 
-**1.**若 $\limsup_{n \to \infty} a_n = a$，则 (C1) 和 (C2) 成立
+(i)若 $\limsup_{n \to \infty} a_n = a$，则 (C1) 和 (C2) 成立
 
 记 $ L = \limsup_{n \to \infty} a_n = a $。  
 令 $ b_n = \sup_{k \geq n} a_k $，则 $ b_n $ 单调递减且 $\lim_{n \to \infty} b_n = a$。
@@ -116,7 +193,7 @@ $$
 
 综上，(C2) 成立。
 
-**2.**若 (C1) 和 (C2) 成立，则 $\limsup_{n \to \infty} a_n = a$
+(ii)若 (C1) 和 (C2) 成立，则 $\limsup_{n \to \infty} a_n = a$
 
 设 (C1) 和 (C2) 成立。  
 令 $ L = \limsup_{n \to \infty} a_n $。由定义，$ L $ 是所有收敛子列极限的上确界。
@@ -302,5 +379,6 @@ $$
 $$
 \lim_{k \to \infty} a_{n_k} = L
 $$
+
 
 该子列收敛于有限实数 $L$，故 $\{a_n\}$ 存在收敛子列。
