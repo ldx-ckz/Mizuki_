@@ -402,6 +402,125 @@ $$
 \limsup_{n \to \infty} (x_n + y_n) = -\infty = \limsup_{n \to \infty} x_n + (-\infty)
 $$
 
+**命题6**设 $\{x_n\}$ 和 $\{y_n\}$ 是非负数列，且在以下乘积均有意义时（即没有 $0 \cdot \infty$ 或 $\infty \cdot 0$ 的不确定形式），有：
+
+$$
+\liminf_{n \to \infty} x_n \cdot \liminf_{n \to \infty} y_n \leq \liminf_{n \to \infty} (x_n y_n) \leq \liminf_{n \to \infty} x_n \cdot \limsup_{n \to \infty} y_n
+$$
+
+$$
+\leq \limsup_{n \to \infty} (x_n y_n) \leq \limsup_{n \to \infty} x_n \cdot \limsup_{n \to \infty} y_n.
+$$
+
+**证明**
+
+1. 第一个不等式：$\liminf x_n \cdot \liminf y_n \leq \liminf (x_n y_n)$
+
+令 $a = \liminf_{n \to \infty} x_n$，$b = \liminf_{n \to \infty} y_n$。
+
+定义 $i_n = \inf_{k \geq n} x_k$，$j_n = \inf_{k \geq n} y_k$，则 $i_n \to a$，$j_n \to b$。
+
+由于 $x_n \geq i_n$ 和 $y_n \geq j_n$ 对所有 $n$ 成立，且 $x_n, y_n \geq 0$，因此 $x_n y_n \geq i_n j_n$ 对所有 $n$ 成立。
+
+于是：
+$$
+\inf_{k \geq n} (x_k y_k) \geq i_n j_n
+$$
+
+取极限 $n \to \infty$：
+$$
+\liminf_{n \to \infty} (x_n y_n) = \lim_{n \to \infty} \inf_{k \geq n} (x_k y_k) \geq \lim_{n \to \infty} (i_n j_n) = a b
+$$
+
+即：
+$$
+\liminf_{n \to \infty} x_n \cdot \liminf_{n \to \infty} y_n \leq \liminf_{n \to \infty} (x_n y_n)
+$$
+
+2. 第二个不等式：$\liminf (x_n y_n) \leq \liminf x_n \cdot \limsup y_n$
+
+令 $a = \liminf_{n \to \infty} x_n$，$c = \limsup_{n \to \infty} y_n$。
+
+定义 $i_n = \inf_{k \geq n} x_k$，$C_n = \sup_{k \geq n} y_k$，则 $i_n \to a$，$C_n \to c$。
+
+对于任意 $n$，有 $x_k y_k \leq x_k C_n$ 对所有 $k \geq n$ 成立，因此：
+$$
+\inf_{k \geq n} (x_k y_k) \leq \inf_{k \geq n} (x_k C_n) = C_n \inf_{k \geq n} x_k = C_n i_n
+$$
+
+取极限 $n \to \infty$：
+$$
+\liminf_{n \to \infty} (x_n y_n) = \lim_{n \to \infty} \inf_{k \geq n} (x_k y_k) \leq \lim_{n \to \infty} (C_n i_n) = a c
+$$
+
+即：
+$$
+\liminf_{n \to \infty} (x_n y_n) \leq \liminf_{n \to \infty} x_n \cdot \limsup_{n \to \infty} y_n
+$$
+
+3. 第三个不等式：$\liminf x_n \cdot \limsup y_n \leq \limsup (x_n y_n)$
+
+令 $a = \liminf_{n \to \infty} x_n$，$c = \limsup_{n \to \infty} y_n$。
+
+如果 $a = 0$，则 $a c = 0$，且由于 $x_n y_n \geq 0$，有 $\limsup_{n \to \infty} (x_n y_n) \geq 0$，不等式成立。
+
+如果 $a > 0$，则对于任意 $\epsilon > 0$，存在 $N$ 使得当 $n \geq N$ 时，有 $x_n > a - \epsilon$（因为 $\inf_{k \geq n} x_k \to a$）。
+
+同时，存在子列 $\{n_k\}$ 使得 $y_{n_k} \to c$。
+
+沿此子列，对于足够大的 $k$，有 $x_{n_k} > a - \epsilon$，因此：
+$$
+x_{n_k} y_{n_k} > (a - \epsilon) y_{n_k}
+$$
+
+取极限 $k \to \infty$：
+$$
+\limsup_{n \to \infty} (x_n y_n) \geq \lim_{k \to \infty} x_{n_k} y_{n_k} \geq (a - \epsilon) c
+$$
+
+由于 $\epsilon > 0$ 任意，有：
+$$
+\limsup_{n \to \infty} (x_n y_n) \geq a c
+$$
+
+即：
+$$
+\liminf_{n \to \infty} x_n \cdot \limsup_{n \to \infty} y_n \leq \limsup_{n \to \infty} (x_n y_n)
+$$
+
+4. 第四个不等式：$\limsup (x_n y_n) \leq \limsup x_n \cdot \limsup y_n$
+
+令 $c = \limsup_{n \to \infty} x_n$，$d = \limsup_{n \to \infty} y_n$。
+
+定义 $C_n = \sup_{k \geq n} x_k$，$D_n = \sup_{k \geq n} y_k$，则 $C_n \to c$，$D_n \to d$。
+
+对于任意 $\epsilon > 0$，存在 $N$ 使得当 $n \geq N$ 时，有 $C_n < c + \epsilon$ 和 $D_n < d + \epsilon$。
+
+因此，对于所有 $k \geq n$，有 $x_k < c + \epsilon$ 和 $y_k < d + \epsilon$，所以：
+$$
+x_k y_k < (c + \epsilon)(d + \epsilon)
+$$
+
+因此：
+$$
+\sup_{k \geq n} (x_k y_k) \leq (c + \epsilon)(d + \epsilon)
+$$
+
+取极限 $n \to \infty$：
+$$
+\limsup_{n \to \infty} (x_n y_n) = \lim_{n \to \infty} \sup_{k \geq n} (x_k y_k) \leq (c + \epsilon)(d + \epsilon)
+$$
+
+由于 $\epsilon > 0$ 任意，有：
+$$
+\limsup_{n \to \infty} (x_n y_n) \leq c d
+$$
+
+即：
+$$
+\limsup_{n \to \infty} (x_n y_n) \leq \limsup_{n \to \infty} x_n \cdot \limsup_{n \to \infty} y_n
+$$
+
 ---
 
 ###  等价刻画
@@ -581,5 +700,6 @@ $$
 
 
 该子列收敛于有限实数 $L$，故 $\{a_n\}$ 存在收敛子列。
+
 
 
